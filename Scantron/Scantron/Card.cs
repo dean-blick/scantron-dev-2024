@@ -313,6 +313,8 @@ namespace Scantron
         /// <returns>Which bubble is darkest. Defaults to 0.</returns>
         private int GetDarkestBubble(int a, int b, int c)
         {
+            ///returns 1 even if a bubble is mostly erased.
+            if (a < 54 && b < 54 && c < 54) { return 1; }
             if (a > b && a >c)
             {
                 return 1;
@@ -340,6 +342,8 @@ namespace Scantron
         /// <returns>Which bubble is darkest. Defaults to 0.</returns>
         private int GetDarkestBubble(int a, int b, int c, int d, int e)
         {
+            ///returns 1 even if a bubble is mostly erased.
+            if(a < 54 && b < 54 && c < 54 && d < 54 && e < 54) { return 1; }
             if (a > b && a > c && a > d && a > e)
             {
                 return 1;

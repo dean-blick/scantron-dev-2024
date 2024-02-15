@@ -44,7 +44,7 @@ namespace Scantron
         private Label uxVersionLabel;
         private Label uxScoreLabel;
         private DataGridView uxCardListDataGridView;
-        private TextBox uxStatusTextBox;
+        //private TextBox uxStatusTextBox;
         private TabControl uxMainTabControl;
         private TabPage uxStartTabPage;
         private TabPage uxAnswerKeyTabPage;
