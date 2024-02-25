@@ -19,6 +19,8 @@ namespace Scantron
         private float points;
         // Holds if this questions can be graded for partial credit on multiple answer questions.
         private bool partial_credit;
+
+        public string DarkestBubble;
         
         public string Answer
         {

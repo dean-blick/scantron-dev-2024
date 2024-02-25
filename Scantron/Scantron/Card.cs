@@ -12,6 +12,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 
 namespace Scantron
 {
@@ -262,9 +263,14 @@ namespace Scantron
                     for (int j = 4; j >= 0; j--)
                     {
                         answer = "";
-
+                        Tuple<String, Char> DarkestValues = new Tuple<String, Char>("1", '0');
+                        
                         for (int k = 0; k < 5; k++)
                         {
+                            if (card_lines[i + k][j] > DarkestValues.Item2)
+                            {
+                                DarkestValues = new Tuple<string, char>((k + 1).ToString(), card_lines[i + k][j]);
+                            }
                             if (card_lines[i + k][j] > 54)
                             {
                                 answer += k + 1;
@@ -275,7 +281,9 @@ namespace Scantron
                             }
                         }
 
-                        response.Add(new Question(answer, 0, false));
+                        Question q = new Question(answer, 0, false);
+                        q.DarkestBubble = DarkestValues.Item1;
+                        response.Add(q);
                         count++;
                     }
                 }
@@ -284,9 +292,14 @@ namespace Scantron
                     for (int j = 14; j >= 0; j--)
                     {
                         answer = "";
+                        Tuple<String, Char> DarkestValues = new Tuple<String, Char>("1", '0');
 
                         for (int k = 0; k < 5; k++)
                         {
+                            if (card_lines[i + k][j] > DarkestValues.Item2)
+                            {
+                                DarkestValues = new Tuple<string, char>((k + 1).ToString(), card_lines[i + k][j]);
+                            }
                             if (card_lines[i + k][j] > 54)
                             {
                                 answer += k + 1;
@@ -297,7 +310,9 @@ namespace Scantron
                             }
                         }
 
-                        response.Add(new Question(answer,0, false));
+                        Question q = new Question(answer, 0, false);
+                        q.DarkestBubble = DarkestValues.Item1;
+                        response.Add(q);
                         count++;
                     }
                 }
@@ -414,7 +429,7 @@ namespace Scantron
                 }
                 else
                 {
-                    card_info += "*";
+                    card_info += response[i].DarkestBubble;
                 }
             }
 

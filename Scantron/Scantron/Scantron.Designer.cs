@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.uxReadyButton = new System.Windows.Forms.Button();
+            this.uxDoneButton = new System.Windows.Forms.Button();
             this.uxStudentResponsePanel = new System.Windows.Forms.Panel();
             this.uxStudentSelectorComboBox = new System.Windows.Forms.ComboBox();
             this.uxMainTabControl = new System.Windows.Forms.TabControl();
@@ -112,6 +114,43 @@
             this.uxCreateFileTabPage.SuspendLayout();
             this.SuspendLayout();
             // 
+            // uxReadyButton
+            // 
+            this.uxReadyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.uxReadyButton.BackColor = System.Drawing.SystemColors.Control;
+            this.uxReadyButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.uxReadyButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
+            this.uxReadyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uxReadyButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxReadyButton.Location = new System.Drawing.Point(11, 731);
+            this.uxReadyButton.Margin = new System.Windows.Forms.Padding(4);
+            this.uxReadyButton.Name = "uxReadyButton";
+            this.uxReadyButton.Size = new System.Drawing.Size(193, 62);
+            this.uxReadyButton.TabIndex = 0;
+            this.uxReadyButton.TabStop = false;
+            this.uxReadyButton.Tag = "";
+            this.uxReadyButton.Text = "Ready";
+            this.uxReadyButton.UseVisualStyleBackColor = false;
+            this.uxReadyButton.Click += new System.EventHandler(this.uxReadyButton_Click);
+            // 
+            // uxDoneButton
+            // 
+            this.uxDoneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.uxDoneButton.BackColor = System.Drawing.SystemColors.Control;
+            this.uxDoneButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.uxDoneButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
+            this.uxDoneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uxDoneButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxDoneButton.Location = new System.Drawing.Point(312, 731);
+            this.uxDoneButton.Margin = new System.Windows.Forms.Padding(4);
+            this.uxDoneButton.Name = "uxDoneButton";
+            this.uxDoneButton.Size = new System.Drawing.Size(193, 62);
+            this.uxDoneButton.TabIndex = 4;
+            this.uxDoneButton.TabStop = false;
+            this.uxDoneButton.Text = "Done";
+            this.uxDoneButton.UseVisualStyleBackColor = false;
+            this.uxDoneButton.Click += new System.EventHandler(this.uxDoneButton_Click);
+            // 
             // uxStudentResponsePanel
             // 
             this.uxStudentResponsePanel.AutoScroll = true;
@@ -119,7 +158,7 @@
             this.uxStudentResponsePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.uxStudentResponsePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.uxStudentResponsePanel.Location = new System.Drawing.Point(577, 52);
-            this.uxStudentResponsePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxStudentResponsePanel.Margin = new System.Windows.Forms.Padding(4);
             this.uxStudentResponsePanel.Name = "uxStudentResponsePanel";
             this.uxStudentResponsePanel.Size = new System.Drawing.Size(535, 526);
             this.uxStudentResponsePanel.TabIndex = 15;
@@ -131,7 +170,7 @@
             this.uxStudentSelectorComboBox.FormattingEnabled = true;
             this.uxStudentSelectorComboBox.ItemHeight = 20;
             this.uxStudentSelectorComboBox.Location = new System.Drawing.Point(733, 591);
-            this.uxStudentSelectorComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxStudentSelectorComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.uxStudentSelectorComboBox.Name = "uxStudentSelectorComboBox";
             this.uxStudentSelectorComboBox.Size = new System.Drawing.Size(216, 28);
             this.uxStudentSelectorComboBox.TabIndex = 16;
@@ -150,10 +189,11 @@
             this.uxMainTabControl.HotTrack = true;
             this.uxMainTabControl.ItemSize = new System.Drawing.Size(169, 30);
             this.uxMainTabControl.Location = new System.Drawing.Point(0, 0);
-            this.uxMainTabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxMainTabControl.Margin = new System.Windows.Forms.Padding(4);
+            this.uxMainTabControl.MinimumSize = new System.Drawing.Size(1136, 849);
             this.uxMainTabControl.Name = "uxMainTabControl";
             this.uxMainTabControl.SelectedIndex = 0;
-            this.uxMainTabControl.Size = new System.Drawing.Size(1136, 849);
+            this.uxMainTabControl.Size = new System.Drawing.Size(1282, 955);
             this.uxMainTabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.uxMainTabControl.TabIndex = 9;
             // 
@@ -176,9 +216,9 @@
             this.uxStartTabPage.Controls.Add(this.uxSetupImage2PictureBox);
             this.uxStartTabPage.Controls.Add(this.uxSetupImage1PictureBox);
             this.uxStartTabPage.Location = new System.Drawing.Point(4, 34);
-            this.uxStartTabPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxStartTabPage.Margin = new System.Windows.Forms.Padding(4);
             this.uxStartTabPage.Name = "uxStartTabPage";
-            this.uxStartTabPage.Size = new System.Drawing.Size(1128, 811);
+            this.uxStartTabPage.Size = new System.Drawing.Size(1274, 917);
             this.uxStartTabPage.TabIndex = 3;
             this.uxStartTabPage.Text = "Start";
             // 
@@ -205,7 +245,7 @@
             this.uxGradingWithThisProgramCheckBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxGradingWithThisProgramCheckBox.ForeColor = System.Drawing.Color.Indigo;
             this.uxGradingWithThisProgramCheckBox.Location = new System.Drawing.Point(23, 683);
-            this.uxGradingWithThisProgramCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxGradingWithThisProgramCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.uxGradingWithThisProgramCheckBox.Name = "uxGradingWithThisProgramCheckBox";
             this.uxGradingWithThisProgramCheckBox.Size = new System.Drawing.Size(283, 30);
             this.uxGradingWithThisProgramCheckBox.TabIndex = 55;
@@ -221,8 +261,8 @@
             this.uxStartContinueButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.uxStartContinueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxStartContinueButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxStartContinueButton.Location = new System.Drawing.Point(921, 731);
-            this.uxStartContinueButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxStartContinueButton.Location = new System.Drawing.Point(921, 837);
+            this.uxStartContinueButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxStartContinueButton.Name = "uxStartContinueButton";
             this.uxStartContinueButton.Size = new System.Drawing.Size(193, 62);
             this.uxStartContinueButton.TabIndex = 54;
@@ -246,7 +286,7 @@
             // 
             this.uxNumberOfQuestionsNumericUpDown.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.uxNumberOfQuestionsNumericUpDown.Location = new System.Drawing.Point(239, 638);
-            this.uxNumberOfQuestionsNumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxNumberOfQuestionsNumericUpDown.Margin = new System.Windows.Forms.Padding(4);
             this.uxNumberOfQuestionsNumericUpDown.Maximum = new decimal(new int[] {
             250,
             0,
@@ -282,8 +322,8 @@
             this.uxResetButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
             this.uxResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxResetButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxResetButton.Location = new System.Drawing.Point(11, 731);
-            this.uxResetButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxResetButton.Location = new System.Drawing.Point(11, 837);
+            this.uxResetButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxResetButton.Name = "uxResetButton";
             this.uxResetButton.Size = new System.Drawing.Size(193, 62);
             this.uxResetButton.TabIndex = 50;
@@ -307,7 +347,7 @@
             // 
             this.uxExamNameTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.uxExamNameTextBox.Location = new System.Drawing.Point(239, 554);
-            this.uxExamNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxExamNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.uxExamNameTextBox.Name = "uxExamNameTextBox";
             this.uxExamNameTextBox.Size = new System.Drawing.Size(207, 32);
             this.uxExamNameTextBox.TabIndex = 48;
@@ -328,7 +368,7 @@
             // 
             this.uxNumberOfVersionsNumericUpDown.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.uxNumberOfVersionsNumericUpDown.Location = new System.Drawing.Point(239, 597);
-            this.uxNumberOfVersionsNumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxNumberOfVersionsNumericUpDown.Margin = new System.Windows.Forms.Padding(4);
             this.uxNumberOfVersionsNumericUpDown.Maximum = new decimal(new int[] {
             3,
             0,
@@ -350,7 +390,7 @@
             this.uxSetupImage3PictureBox.BackColor = System.Drawing.Color.Black;
             this.uxSetupImage3PictureBox.Image = global::Scantron.Properties.Resources.SetupImage3;
             this.uxSetupImage3PictureBox.Location = new System.Drawing.Point(624, 505);
-            this.uxSetupImage3PictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxSetupImage3PictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.uxSetupImage3PictureBox.Name = "uxSetupImage3PictureBox";
             this.uxSetupImage3PictureBox.Size = new System.Drawing.Size(445, 208);
             this.uxSetupImage3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -362,7 +402,7 @@
             this.uxSetupImage2PictureBox.BackColor = System.Drawing.Color.Black;
             this.uxSetupImage2PictureBox.Image = global::Scantron.Properties.Resources.SetupImage2;
             this.uxSetupImage2PictureBox.Location = new System.Drawing.Point(624, 277);
-            this.uxSetupImage2PictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxSetupImage2PictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.uxSetupImage2PictureBox.Name = "uxSetupImage2PictureBox";
             this.uxSetupImage2PictureBox.Size = new System.Drawing.Size(445, 204);
             this.uxSetupImage2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -374,7 +414,7 @@
             this.uxSetupImage1PictureBox.BackColor = System.Drawing.Color.Black;
             this.uxSetupImage1PictureBox.Image = global::Scantron.Properties.Resources.SetupImage1;
             this.uxSetupImage1PictureBox.Location = new System.Drawing.Point(624, 50);
-            this.uxSetupImage1PictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxSetupImage1PictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.uxSetupImage1PictureBox.Name = "uxSetupImage1PictureBox";
             this.uxSetupImage1PictureBox.Size = new System.Drawing.Size(445, 204);
             this.uxSetupImage1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -397,9 +437,9 @@
             this.uxAnswerKeyTabPage.Controls.Add(this.uxAllQuestionPointsNumericUpDown);
             this.uxAnswerKeyTabPage.Controls.Add(this.uxAnswerKeyTabControl);
             this.uxAnswerKeyTabPage.Location = new System.Drawing.Point(4, 34);
-            this.uxAnswerKeyTabPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxAnswerKeyTabPage.Margin = new System.Windows.Forms.Padding(4);
             this.uxAnswerKeyTabPage.Name = "uxAnswerKeyTabPage";
-            this.uxAnswerKeyTabPage.Size = new System.Drawing.Size(1128, 811);
+            this.uxAnswerKeyTabPage.Size = new System.Drawing.Size(1172, 913);
             this.uxAnswerKeyTabPage.TabIndex = 2;
             this.uxAnswerKeyTabPage.Text = "Answer Key";
             // 
@@ -408,7 +448,7 @@
             this.uxKeyMessageCenterTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.uxKeyMessageCenterTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.uxKeyMessageCenterTextBox.Location = new System.Drawing.Point(11, 665);
-            this.uxKeyMessageCenterTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxKeyMessageCenterTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.uxKeyMessageCenterTextBox.Multiline = true;
             this.uxKeyMessageCenterTextBox.Name = "uxKeyMessageCenterTextBox";
             this.uxKeyMessageCenterTextBox.ReadOnly = true;
@@ -453,12 +493,13 @@
             this.uxDoneScanningButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxDoneScanningButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.uxDoneScanningButton.Location = new System.Drawing.Point(313, 731);
-            this.uxDoneScanningButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxDoneScanningButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxDoneScanningButton.Name = "uxDoneScanningButton";
             this.uxDoneScanningButton.Size = new System.Drawing.Size(193, 62);
             this.uxDoneScanningButton.TabIndex = 57;
             this.uxDoneScanningButton.Text = "Done";
             this.uxDoneScanningButton.UseVisualStyleBackColor = false;
+            this.uxDoneScanningButton.Visible = false;
             this.uxDoneScanningButton.Click += new System.EventHandler(this.uxDoneScanningButton_Click);
             // 
             // uxScanAnswerKeyButton
@@ -470,12 +511,13 @@
             this.uxScanAnswerKeyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxScanAnswerKeyButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.uxScanAnswerKeyButton.Location = new System.Drawing.Point(11, 731);
-            this.uxScanAnswerKeyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxScanAnswerKeyButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxScanAnswerKeyButton.Name = "uxScanAnswerKeyButton";
             this.uxScanAnswerKeyButton.Size = new System.Drawing.Size(193, 62);
             this.uxScanAnswerKeyButton.TabIndex = 56;
             this.uxScanAnswerKeyButton.Text = "Scan Key";
             this.uxScanAnswerKeyButton.UseVisualStyleBackColor = false;
+            this.uxScanAnswerKeyButton.Visible = false;
             this.uxScanAnswerKeyButton.Click += new System.EventHandler(this.uxScanAnswerKeyButton_Click);
             // 
             // uxAnswerKeyContinueButton
@@ -487,7 +529,7 @@
             this.uxAnswerKeyContinueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxAnswerKeyContinueButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.uxAnswerKeyContinueButton.Location = new System.Drawing.Point(921, 731);
-            this.uxAnswerKeyContinueButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxAnswerKeyContinueButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxAnswerKeyContinueButton.Name = "uxAnswerKeyContinueButton";
             this.uxAnswerKeyContinueButton.Size = new System.Drawing.Size(193, 62);
             this.uxAnswerKeyContinueButton.TabIndex = 55;
@@ -504,7 +546,7 @@
             this.uxCreateAnswerKeyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxCreateAnswerKeyButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.uxCreateAnswerKeyButton.Location = new System.Drawing.Point(616, 731);
-            this.uxCreateAnswerKeyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxCreateAnswerKeyButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxCreateAnswerKeyButton.Name = "uxCreateAnswerKeyButton";
             this.uxCreateAnswerKeyButton.Size = new System.Drawing.Size(193, 62);
             this.uxCreateAnswerKeyButton.TabIndex = 44;
@@ -531,7 +573,7 @@
             this.uxAllPartialCreditCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.uxAllPartialCreditCheckBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxAllPartialCreditCheckBox.Location = new System.Drawing.Point(891, 663);
-            this.uxAllPartialCreditCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxAllPartialCreditCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.uxAllPartialCreditCheckBox.Name = "uxAllPartialCreditCheckBox";
             this.uxAllPartialCreditCheckBox.Size = new System.Drawing.Size(217, 37);
             this.uxAllPartialCreditCheckBox.TabIndex = 33;
@@ -561,7 +603,7 @@
             this.uxAllQuestionPointsNumericUpDown.DecimalPlaces = 2;
             this.uxAllQuestionPointsNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxAllQuestionPointsNumericUpDown.Location = new System.Drawing.Point(761, 668);
-            this.uxAllQuestionPointsNumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxAllQuestionPointsNumericUpDown.Margin = new System.Windows.Forms.Padding(4);
             this.uxAllQuestionPointsNumericUpDown.Name = "uxAllQuestionPointsNumericUpDown";
             this.uxAllQuestionPointsNumericUpDown.Size = new System.Drawing.Size(67, 23);
             this.uxAllQuestionPointsNumericUpDown.TabIndex = 39;
@@ -582,7 +624,7 @@
             this.uxAnswerKeyTabControl.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxAnswerKeyTabControl.ItemSize = new System.Drawing.Size(133, 18);
             this.uxAnswerKeyTabControl.Location = new System.Drawing.Point(577, 52);
-            this.uxAnswerKeyTabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxAnswerKeyTabControl.Margin = new System.Windows.Forms.Padding(4);
             this.uxAnswerKeyTabControl.Name = "uxAnswerKeyTabControl";
             this.uxAnswerKeyTabControl.SelectedIndex = 0;
             this.uxAnswerKeyTabControl.Size = new System.Drawing.Size(536, 609);
@@ -596,9 +638,9 @@
             this.uxVersion1Tab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.uxVersion1Tab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.uxVersion1Tab.Location = new System.Drawing.Point(4, 22);
-            this.uxVersion1Tab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxVersion1Tab.Margin = new System.Windows.Forms.Padding(4);
             this.uxVersion1Tab.Name = "uxVersion1Tab";
-            this.uxVersion1Tab.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxVersion1Tab.Padding = new System.Windows.Forms.Padding(4);
             this.uxVersion1Tab.Size = new System.Drawing.Size(528, 583);
             this.uxVersion1Tab.TabIndex = 0;
             this.uxVersion1Tab.Text = "Version 1";
@@ -610,9 +652,9 @@
             this.uxVersion2Tab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.uxVersion2Tab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.uxVersion2Tab.Location = new System.Drawing.Point(4, 22);
-            this.uxVersion2Tab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxVersion2Tab.Margin = new System.Windows.Forms.Padding(4);
             this.uxVersion2Tab.Name = "uxVersion2Tab";
-            this.uxVersion2Tab.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxVersion2Tab.Padding = new System.Windows.Forms.Padding(4);
             this.uxVersion2Tab.Size = new System.Drawing.Size(528, 583);
             this.uxVersion2Tab.TabIndex = 1;
             this.uxVersion2Tab.Text = "Version 2";
@@ -624,7 +666,7 @@
             this.uxVersion3Tab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.uxVersion3Tab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.uxVersion3Tab.Location = new System.Drawing.Point(4, 22);
-            this.uxVersion3Tab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxVersion3Tab.Margin = new System.Windows.Forms.Padding(4);
             this.uxVersion3Tab.Name = "uxVersion3Tab";
             this.uxVersion3Tab.Size = new System.Drawing.Size(528, 583);
             this.uxVersion3Tab.TabIndex = 2;
@@ -641,12 +683,14 @@
             this.uxScanTabPage.Controls.Add(this.uxTestDataButton);
             this.uxScanTabPage.Controls.Add(this.uxSaveChangesButton);
             this.uxScanTabPage.Controls.Add(this.uxScanInstructionLabel);
+            this.uxScanTabPage.Controls.Add(this.uxReadyButton);
+            this.uxScanTabPage.Controls.Add(this.uxDoneButton);
             this.uxScanTabPage.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxScanTabPage.Location = new System.Drawing.Point(4, 34);
-            this.uxScanTabPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxScanTabPage.Margin = new System.Windows.Forms.Padding(4);
             this.uxScanTabPage.Name = "uxScanTabPage";
-            this.uxScanTabPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.uxScanTabPage.Size = new System.Drawing.Size(1128, 811);
+            this.uxScanTabPage.Padding = new System.Windows.Forms.Padding(4);
+            this.uxScanTabPage.Size = new System.Drawing.Size(1172, 913);
             this.uxScanTabPage.TabIndex = 0;
             this.uxScanTabPage.Text = "Scan";
             this.uxScanTabPage.Click += new System.EventHandler(this.uxScanTabPage_Click);
@@ -656,7 +700,7 @@
             this.uxScanMessageCenterTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.uxScanMessageCenterTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.uxScanMessageCenterTextBox.Location = new System.Drawing.Point(11, 665);
-            this.uxScanMessageCenterTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxScanMessageCenterTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.uxScanMessageCenterTextBox.Multiline = true;
             this.uxScanMessageCenterTextBox.Name = "uxScanMessageCenterTextBox";
             this.uxScanMessageCenterTextBox.ReadOnly = true;
@@ -689,42 +733,42 @@
             this.uxCardListDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.uxCardListDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.uxCardListDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uxCardListDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uxCardListDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.uxCardListDataGridView.ColumnHeadersHeight = 30;
             this.uxCardListDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CardNumberColumn,
             this.uxWIDColumn,
             this.uxTestVersionColumn,
             this.uxSheetNumberColumn});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.uxCardListDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.uxCardListDataGridView.DefaultCellStyle = dataGridViewCellStyle17;
             this.uxCardListDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.uxCardListDataGridView.EnableHeadersVisualStyles = false;
             this.uxCardListDataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.uxCardListDataGridView.Location = new System.Drawing.Point(577, 52);
-            this.uxCardListDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxCardListDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.uxCardListDataGridView.Name = "uxCardListDataGridView";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.uxCardListDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.uxCardListDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.uxCardListDataGridView.RowHeadersVisible = false;
             this.uxCardListDataGridView.RowHeadersWidth = 51;
             this.uxCardListDataGridView.Size = new System.Drawing.Size(536, 609);
@@ -772,7 +816,7 @@
             this.uxScanContinueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxScanContinueButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxScanContinueButton.Location = new System.Drawing.Point(921, 731);
-            this.uxScanContinueButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxScanContinueButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxScanContinueButton.Name = "uxScanContinueButton";
             this.uxScanContinueButton.Size = new System.Drawing.Size(193, 62);
             this.uxScanContinueButton.TabIndex = 55;
@@ -802,7 +846,7 @@
             this.uxTestDataButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxTestDataButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxTestDataButton.Location = new System.Drawing.Point(745, 668);
-            this.uxTestDataButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxTestDataButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxTestDataButton.Name = "uxTestDataButton";
             this.uxTestDataButton.Size = new System.Drawing.Size(193, 53);
             this.uxTestDataButton.TabIndex = 35;
@@ -819,7 +863,7 @@
             this.uxSaveChangesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxSaveChangesButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxSaveChangesButton.Location = new System.Drawing.Point(613, 731);
-            this.uxSaveChangesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxSaveChangesButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxSaveChangesButton.Name = "uxSaveChangesButton";
             this.uxSaveChangesButton.Size = new System.Drawing.Size(200, 62);
             this.uxSaveChangesButton.TabIndex = 33;
@@ -856,10 +900,10 @@
             this.uxGradeTabPage.Controls.Add(this.uxStudentResponsePanel);
             this.uxGradeTabPage.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxGradeTabPage.Location = new System.Drawing.Point(4, 34);
-            this.uxGradeTabPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxGradeTabPage.Margin = new System.Windows.Forms.Padding(4);
             this.uxGradeTabPage.Name = "uxGradeTabPage";
-            this.uxGradeTabPage.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.uxGradeTabPage.Size = new System.Drawing.Size(1128, 811);
+            this.uxGradeTabPage.Padding = new System.Windows.Forms.Padding(4);
+            this.uxGradeTabPage.Size = new System.Drawing.Size(1172, 913);
             this.uxGradeTabPage.TabIndex = 1;
             this.uxGradeTabPage.Text = "Grade";
             // 
@@ -868,7 +912,7 @@
             this.uxGradeMessageCenterTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.uxGradeMessageCenterTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.uxGradeMessageCenterTextBox.Location = new System.Drawing.Point(11, 665);
-            this.uxGradeMessageCenterTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxGradeMessageCenterTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.uxGradeMessageCenterTextBox.Multiline = true;
             this.uxGradeMessageCenterTextBox.Name = "uxGradeMessageCenterTextBox";
             this.uxGradeMessageCenterTextBox.ReadOnly = true;
@@ -912,7 +956,7 @@
             this.uxGradeContinueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxGradeContinueButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.uxGradeContinueButton.Location = new System.Drawing.Point(921, 731);
-            this.uxGradeContinueButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxGradeContinueButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxGradeContinueButton.Name = "uxGradeContinueButton";
             this.uxGradeContinueButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uxGradeContinueButton.Size = new System.Drawing.Size(193, 62);
@@ -928,7 +972,7 @@
             this.uxGradeStudentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxGradeStudentsButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.uxGradeStudentsButton.Location = new System.Drawing.Point(11, 731);
-            this.uxGradeStudentsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxGradeStudentsButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxGradeStudentsButton.Name = "uxGradeStudentsButton";
             this.uxGradeStudentsButton.Size = new System.Drawing.Size(209, 62);
             this.uxGradeStudentsButton.TabIndex = 0;
@@ -978,7 +1022,7 @@
             this.uxPreviousButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxPreviousButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxPreviousButton.Location = new System.Drawing.Point(577, 586);
-            this.uxPreviousButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxPreviousButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxPreviousButton.Name = "uxPreviousButton";
             this.uxPreviousButton.Size = new System.Drawing.Size(103, 37);
             this.uxPreviousButton.TabIndex = 21;
@@ -993,7 +1037,7 @@
             this.uxNextButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxNextButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxNextButton.Location = new System.Drawing.Point(1004, 586);
-            this.uxNextButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxNextButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxNextButton.Name = "uxNextButton";
             this.uxNextButton.Size = new System.Drawing.Size(107, 37);
             this.uxNextButton.TabIndex = 10;
@@ -1011,9 +1055,9 @@
             this.uxCreateFileTabPage.Controls.Add(this.uxScantronToolMultipleAnswerButton);
             this.uxCreateFileTabPage.Controls.Add(this.uxCreateFileInstructionLabel);
             this.uxCreateFileTabPage.Location = new System.Drawing.Point(4, 34);
-            this.uxCreateFileTabPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxCreateFileTabPage.Margin = new System.Windows.Forms.Padding(4);
             this.uxCreateFileTabPage.Name = "uxCreateFileTabPage";
-            this.uxCreateFileTabPage.Size = new System.Drawing.Size(1128, 811);
+            this.uxCreateFileTabPage.Size = new System.Drawing.Size(1172, 913);
             this.uxCreateFileTabPage.TabIndex = 4;
             this.uxCreateFileTabPage.Text = "Finish";
             // 
@@ -1039,7 +1083,7 @@
             this.uxScantronToolSingleAnswerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxScantronToolSingleAnswerButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.uxScantronToolSingleAnswerButton.Location = new System.Drawing.Point(287, 731);
-            this.uxScantronToolSingleAnswerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxScantronToolSingleAnswerButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxScantronToolSingleAnswerButton.Name = "uxScantronToolSingleAnswerButton";
             this.uxScantronToolSingleAnswerButton.Size = new System.Drawing.Size(233, 62);
             this.uxScantronToolSingleAnswerButton.TabIndex = 48;
@@ -1057,7 +1101,7 @@
             this.uxFinishButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxFinishButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.uxFinishButton.Location = new System.Drawing.Point(921, 731);
-            this.uxFinishButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxFinishButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxFinishButton.Name = "uxFinishButton";
             this.uxFinishButton.Size = new System.Drawing.Size(193, 62);
             this.uxFinishButton.TabIndex = 47;
@@ -1075,7 +1119,7 @@
             this.uxGradebookButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxGradebookButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.uxGradebookButton.Location = new System.Drawing.Point(11, 731);
-            this.uxGradebookButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxGradebookButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxGradebookButton.Name = "uxGradebookButton";
             this.uxGradebookButton.Size = new System.Drawing.Size(193, 62);
             this.uxGradebookButton.TabIndex = 46;
@@ -1093,7 +1137,7 @@
             this.uxScantronToolMultipleAnswerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uxScantronToolMultipleAnswerButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.uxScantronToolMultipleAnswerButton.Location = new System.Drawing.Point(603, 731);
-            this.uxScantronToolMultipleAnswerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxScantronToolMultipleAnswerButton.Margin = new System.Windows.Forms.Padding(4);
             this.uxScantronToolMultipleAnswerButton.Name = "uxScantronToolMultipleAnswerButton";
             this.uxScantronToolMultipleAnswerButton.Size = new System.Drawing.Size(233, 62);
             this.uxScantronToolMultipleAnswerButton.TabIndex = 45;
@@ -1119,13 +1163,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1136, 849);
+            this.ClientSize = new System.Drawing.Size(1282, 955);
             this.Controls.Add(this.uxMainTabControl);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(793, 450);
+            this.MinimumSize = new System.Drawing.Size(1300, 1002);
             this.Name = "Scantron";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "File Generator";
@@ -1152,6 +1195,9 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button uxReadyButton;
+        private System.Windows.Forms.Button uxDoneButton;
         private System.Windows.Forms.Panel uxStudentResponsePanel;
         private System.Windows.Forms.ComboBox uxStudentSelectorComboBox;
         private System.Windows.Forms.TabControl uxMainTabControl;
@@ -1160,7 +1206,7 @@
         private System.Windows.Forms.Button uxPreviousButton;
         private System.Windows.Forms.Button uxNextButton;
         private System.Windows.Forms.Label uxVersionLabel;
-        //private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Label uxGradeInstructionLabel;
         private System.Windows.Forms.Label uxScanInstructionLabel;
         private System.Windows.Forms.Label uxScoreLabel;
